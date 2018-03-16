@@ -1,8 +1,7 @@
-# -*- coding: utf-8 -*-
-from __future__ import absolute_import, print_function, unicode_literals
 import uuid
 import hashlib
 import logging
+
 
 logger = logging.getLogger(__name__)
 
@@ -18,4 +17,4 @@ def shopee_hash(s):
 
 def shopee_uuid(hex_uuid=False):
     o = uuid.uuid4()
-    return o.hex if hex_uuid else o.__str__()
+    return o.hex if hex_uuid else str(o)

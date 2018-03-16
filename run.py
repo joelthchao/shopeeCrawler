@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 import logging
 
-from shopee import ShopeeAPI
+from shopee.api import ShopeeAPI
 
 logger = logging.getLogger(__name__)
 logfile = "/tmp/shopeeCrawler.run.py.log"

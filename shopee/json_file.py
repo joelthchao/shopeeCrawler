@@ -8,6 +8,8 @@ logger = logging.getLogger(__name__)
 
 class JsonFile(object):
     def __init__(self, json_file):
+        if not isinstance(json_file, str):
+            json_file = str(json_file)
         self.json_file = json_file
 
     def load(self):
